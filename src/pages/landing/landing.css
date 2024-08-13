@@ -1,0 +1,1410 @@
+@charset "utf-8";
+
+/* CSS Document */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@font-face {
+  font-family: "KarlaMedium";
+  src: url("../../assets/fonts/Karla-Medium.ttf");
+}
+
+@font-face {
+  font-family: "KarlaBold";
+  src: url("../../assets/fonts/Karla-Bold.ttf");
+}
+
+@font-face {
+  font-family: "PuntaExtrabold";
+  src: url("../../assets/fonts/PuntaExtrabold.eot");
+  src: url("../../assets/fonts/PuntaExtrabold.eot") format("embedded-opentype"),
+    url("../../assets/fonts/PuntaExtrabold.woff2") format("woff2"),
+    url("../../assets/fonts/PuntaExtrabold.woff") format("woff"),
+    url("../../assets/fonts/PuntaExtrabold.ttf") format("truetype"),
+    url("../../assets/fonts/PuntaExtrabold.svg#PuntaExtrabold") format("svg");
+}
+
+@font-face {
+  font-family: "AvenirBlack";
+  src: url("../../assets/fonts/AvenirBlack.eot");
+  src: url("../../assets/fonts/AvenirBlack.eot") format("embedded-opentype"),
+    url("../../assets/fonts/AvenirBlack.woff2") format("woff2"),
+    url("../../assets/fonts/AvenirBlack.woff") format("woff"),
+    url("../../assets/fonts/AvenirBlack.ttf") format("truetype"),
+    url("../../assets/fonts/AvenirBlack.svg#AvenirBlack") format("svg");
+}
+
+@font-face {
+  font-family: "PuntaRegular";
+  src: url("../../assets/fonts/PuntaRegular.eot");
+  src: url("../../assets/fonts/PuntaRegular.eot") format("embedded-opentype"),
+    url("../../assets/fonts/PuntaRegular.woff2") format("woff2"),
+    url("../../assets/fonts/PuntaRegular.woff") format("woff"),
+    url("../../assets/fonts/PuntaRegular.ttf") format("truetype"),
+    url("../../assets/fonts/PuntaRegular.svg#PuntaRegular") format("svg");
+}
+
+:root {
+  --abutton-color: linear-gradient(146deg, rgba(255, 77, 255, 1) 34%, rgba(65, 17, 249, 1) 74%) 0% 0% no-repeat
+    padding-box;
+  --bbutton-color: linear-gradient(146deg, rgba(42, 242, 255, 1) 30%, rgba(255, 2, 0, 1) 71%);
+  --body-background: linear-gradient(184deg, rgba(12, 0, 55, 1) 10%, rgba(55, 0, 55, 1) 55%);
+  --font-head: #ee4130;
+  --font-body: #fff !important;
+  --counnect-link: #6d82cb !important;
+  --menu-link: #fff !important;
+  --line-color: linear-gradient(99deg, rgba(255, 77, 255, 1) 37%, rgba(65, 17, 249, 1) 80%);
+}
+
+a {
+  color: inherit;
+  outline: none !important;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+button:focus {
+  outline: none !important;
+}
+
+ol {
+  padding-left: 0;
+}
+
+ol li {
+  list-style: inherit;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li,
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+  max-width: 90%;
+  border: none;
+  outline: none;
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.landing.container {
+  max-width: 100% !important;
+}
+
+.landing .container {
+  max-width: 1320px !important;
+}
+
+.top-sec-bar .navbar .navbar-nav .nav-link {
+  font-family: "AvenirBlack" !important;
+  color: var(--menu-link) !important;
+}
+
+.top-sec-bar .navbar .navbar-nav .nav-item .nav-link {
+  margin: 0 7px !important;
+  font-size: 20px !important;
+}
+
+.login-btn {
+  font-family: "AvenirBlack" !important;
+  padding: 6px 70px !important;
+  border: solid 2px #fff !important;
+  color: var(--menu-link) !important;
+  border-radius: 30px !important;
+  margin: 0 20px !important;
+  height: 45px !important;
+  align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  font-size: 20px !important;
+}
+
+.contact-btn {
+  font-family: "AvenirBlack" !important;
+  padding: 6px 40px !important;
+  border: solid 2px #fff !important;
+  color: var(--menu-link) !important;
+  border-radius: 30px !important;
+  margin: 0 20px !important;
+  height: 45px !important;
+  align-items: center !important;
+  display: flex !important;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 3;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.comon-buuton {
+  font-family: "AvenirBlack" !important;
+  padding: 6px 35px !important;
+  border: none !important;
+  color: var(--menu-link) !important;
+  border-radius: 30px !important;
+  background: var(--abutton-color) !important;
+  height: 45px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transition: all 0.5s !important;
+  width: fit-content !important;
+  /* max-width: 185px;
+  width: 185px; */
+}
+
+.comon-buuton img {
+  width: 24px;
+  transition: all 0.5s;
+  position: relative;
+  left: 12px;
+}
+
+.comon-buuton:hover img {
+  left: 18px;
+}
+
+.comon-buuton:hover,
+.login-btn:hover,
+.contact-btn:hover {
+  transition: all 0.5s;
+  color: var(--menu-link);
+}
+
+.comon-logo {
+  display: grid !important;
+  align-content: center;
+  height: 98px;
+}
+
+.comon-logo img {
+  max-width: 80%;
+  margin: auto;
+}
+
+.multi-logo-div {
+  display: inline-block;
+  width: 100%;
+  border-top: solid 2px #4111f9;
+  border-bottom: solid 2px #4111f9;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.multi-logo-div .slick-arrow {
+  display: none !important;
+}
+
+.items-l {
+  display: flex;
+  justify-content: center;
+}
+
+.slick-track > div.slick-active:nth-child(3) .items-l {
+  text-align: right !important;
+}
+
+.slick-track > div.slick-active:nth-child(1) .items-l img {
+  margin-left: -20px;
+}
+
+.slick-track > div.slick-active:nth-child(2) figure img {
+  margin-left: 20px;
+}
+
+.slick-track > div.slick-active:nth-child(4) .items-l img {
+  max-height: 51px;
+  width: auto;
+}
+
+.multi-logo-div .row > div:nth-child(3) {
+  text-align: right !important;
+}
+
+.multi-logo-div .row > div:nth-child(1) figure img {
+  margin-left: -20px;
+}
+
+.multi-logo-div .row > div:nth-child(2) figure img {
+  margin-left: 20px;
+}
+
+.multi-logo-div .row > div:nth-child(3) figure img {
+  margin-left: 67px;
+}
+
+.multi-logo-div .row > div:first-child {
+  text-align: left !important;
+}
+
+.multi-logo-div .row > div:last-child {
+  text-align: right !important;
+}
+
+/* banner */
+.banner {
+  padding-top: 200px;
+  position: relative;
+}
+
+.banner::before {
+  background-image: url(../../../public/images/Shape\ 1.png);
+  content: "";
+  left: 0px;
+  top: 92px;
+  width: 40%;
+  height: 90%;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: left 130px;
+  z-index: -1;
+}
+
+.full-with .navbar-fixed-top {
+  background: #0c0037;
+  z-index: 3;
+}
+
+.terms-content {
+  padding-top: 200px;
+}
+
+.terms-content h2 {
+  font-family: "KarlaMedium";
+}
+
+.terms-content p {
+  margin-bottom: 16px;
+  font-family: "KarlaMedium";
+}
+
+.terms-content ol li {
+  margin-bottom: 16px;
+  font-family: "KarlaMedium";
+}
+
+.banner::after {
+  background-image: url(../../../public/images/Shape\ 2.png);
+  content: "";
+  right: 0px;
+  top: 0px;
+  width: 40%;
+  height: 90%;
+  display: inline-block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-position: right 130px;
+  z-index: -1;
+}
+
+.banner h1,
+.banner h1 span {
+  font-family: "PuntaExtrabold";
+  color: var(--menu-link);
+  font-size: 82px;
+}
+
+.banner h1 span.sp-color {
+  color: #ff4dff;
+}
+
+.banner p {
+  font-family: "PuntaRegular";
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.banner ul {
+  margin: 20px 0;
+}
+
+.banner ul li {
+  margin: 0 20px;
+  position: relative;
+  display: flex;
+}
+
+.banner ul li::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  top: 44%;
+  transform: translateY(-50%);
+  right: -24px;
+  background: #ff4dff;
+}
+
+.banner ul li:last-child::after {
+  display: none;
+}
+
+.banner ul li a {
+  font-family: "PuntaRegular";
+  font-size: 23px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.terms-content {
+  padding-top: 200px;
+}
+
+.terms-content h2 {
+  font-family: "KarlaMedium";
+}
+
+.terms-content p {
+  margin-bottom: 16px;
+  font-family: "KarlaMedium";
+}
+
+.terms-content ol li {
+  margin-bottom: 16px;
+  font-family: "KarlaMedium";
+}
+
+.line {
+  background: var(--line-color);
+  display: table;
+  margin: auto;
+  height: 4px;
+  margin-top: 40px;
+  width: 22%;
+}
+
+/* body part */
+.how-it-work-1 {
+  padding-top: 140px;
+}
+
+.how-it-work-1 h2 {
+  font-family: "PuntaExtrabold";
+}
+
+.how-it-work-1 p {
+  font-family: "KarlaMedium";
+  margin-top: 15px;
+}
+
+.lan-sub-head,
+.lan-sub-head span {
+  font-family: "PuntaExtrabold";
+  font-size: 44px;
+}
+
+.bd-how {
+  margin-top: 80px !important;
+}
+
+.how-it-work-1 li {
+  margin-bottom: 50px;
+}
+
+.comon-part1 {
+  display: flex;
+  position: relative;
+}
+
+.comon-part1:after {
+  width: 4px;
+  height: 70px;
+  background: transparent linear-gradient(180deg, #4111f900 0%, #4111f9 49%, #4111f900 100%) 0% 0% no-repeat padding-box;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -41px;
+  top: 10px;
+}
+
+.comon-part1 figure {
+  width: 20%;
+}
+
+.comon-part1 .right-content1 {
+  width: 80%;
+}
+
+.comon-part1 .right-content1 p {
+  line-height: 26px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.credibility-div {
+  padding-top: 120px;
+}
+
+.bd-cre {
+  margin-top: 80px !important;
+}
+
+.credibility-div p {
+  font-family: "KarlaMedium";
+}
+
+/* footer */
+footer {
+  display: inline-block;
+  width: 100%;
+}
+
+footer p {
+  font-size: 17px;
+  font-family: "KarlaBold";
+}
+
+.navbar-toggler svg {
+  color: #fff !important;
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (max-width: 1199px) {
+  .top-sec-bar .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 14px !important;
+  }
+
+  .banner::before {
+    background-size: 60%;
+    background-position: left 130px;
+    left: 0px;
+    top: 200px;
+  }
+
+  .banner::after {
+    background-size: 60%;
+    background-position: right 130px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner h1,
+  .banner h1 span {
+    font-size: 70px;
+  }
+
+  .how-it-work-1 h2,
+  .how-it-work-1 p {
+    text-align: center;
+  }
+
+  .banner::before {
+    left: 0px;
+    top: 150px;
+  }
+
+  .comon-part1 h2,
+  .comon-part1 p {
+    text-align: left;
+  }
+
+  .how-it-work-1 ul {
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+
+  .comon-buuton {
+    margin: auto !important;
+    padding: 6px 20px !important;
+  }
+
+  .cre-img {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+
+  .credibility-div p {
+    text-align: center;
+  }
+
+  .contact-btn {
+    margin-top: 18px !important;
+    width: 185px;
+    justify-content: center;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 70px;
+    right: 50px;
+    padding: 30px !important;
+    text-align: center !important;
+    background: transparent linear-gradient(180deg, #370037 0%, #0c0037 100%) 0% 0% no-repeat padding-box !important;
+  }
+
+  .top-sec-bar .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 19px !important;
+  }
+
+  .navbar-collapse .comon-buuton {
+    margin-top: 20px !important;
+    width: 192px !important;
+  }
+
+  .login-btn {
+    width: 186px;
+    margin: auto 0 !important;
+    margin-top: 20px;
+  }
+
+  .navbar-collapse {
+    align-items: center !important;
+    display: table !important;
+    flex-basis: inherit !important;
+    flex-grow: 0 !important;
+    margin: auto !important;
+    width: 90% !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .navbar-toggler span svg {
+    color: #fff !important;
+  }
+
+  .close1 svg {
+    color: #fff;
+  }
+
+  .close1 {
+    display: none;
+  }
+
+  .show-menu1 .bar1 {
+    display: none !important;
+  }
+
+  .show-menu1 .close1 {
+    display: block !important;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  .bd-cre {
+    margin-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner h1,
+  .banner h1 span {
+    font-size: 60px;
+  }
+
+  .credibility-div {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .banner h1,
+  .banner h1 span {
+    font-size: 56px;
+  }
+
+  .banner::before {
+    content: "";
+    left: 0px;
+    top: 132px;
+  }
+
+  .banner ul li a {
+    line-height: 20px;
+    font-size: 18px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .banner::after {
+    content: "";
+    right: 18;
+    top: 0px;
+    width: 40%;
+  }
+
+  .how-it-work-1 h2,
+  .how-it-work-1 p {
+    text-align: center;
+  }
+
+  .comon-part1 h2,
+  .comon-part1 p {
+    text-align: left;
+  }
+
+  .comon-part1 figure {
+    width: 14%;
+  }
+
+  .how-it-work-1 ul {
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+
+  .comon-part1 .right-content1 p {
+    width: 100%;
+  }
+
+  .comon-part1 .right-content1 {
+    padding-left: 20px;
+  }
+
+  .comon-buuton {
+    margin: auto !important;
+  }
+
+  .cre-img {
+    margin-bottom: 20px;
+  }
+
+  .credibility-div p {
+    text-align: center;
+  }
+
+  .contact-btn {
+    width: 185px !important;
+    margin-top: 25px !important;
+    justify-content: center;
+  }
+
+  .md-fot {
+    font-size: 14px;
+  }
+
+  .multi-logo-div {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .banner {
+    padding-top: 150px;
+  }
+
+  .banner h1,
+  .banner h1 span {
+    font-size: 48px;
+  }
+
+  .banner h1 span.sp-color {
+    display: block;
+  }
+
+  .banner ul li {
+    margin: 0 14px;
+  }
+
+  .banner ul li::after {
+    width: 8px;
+    height: 8px;
+    right: -19px;
+  }
+
+  .banner::after {
+    right: 0px;
+    top: 0px;
+  }
+
+  .banner::before {
+    left: 0px;
+    top: 132px;
+  }
+
+  .how-it-work-1 h2,
+  .how-it-work-1 p {
+    text-align: center;
+  }
+
+  .lan-sub-head,
+  .lan-sub-head span {
+    font-size: 32px;
+  }
+
+  .how-it-work-1 {
+    padding-top: 90px;
+  }
+
+  .comon-part1 p,
+  .comon-part1 h2 {
+    text-align: left;
+  }
+
+  .comon-part1 figure {
+    width: 14%;
+  }
+
+  .how-it-work-1 ul {
+    margin-top: 30px;
+    margin-left: 80px;
+  }
+
+  .comon-part1 .right-content1 {
+    padding-left: 20px;
+  }
+
+  .comon-part1 .right-content1 p {
+    line-height: 20px;
+    width: 100%;
+    margin-top: 2px;
+    font-size: 15px;
+  }
+
+  .comon-buuton {
+    justify-content: center;
+    margin: auto !important;
+    min-width: 180px;
+  }
+
+  .contact-btn {
+    margin-top: 25px !important;
+    justify-content: center;
+    padding: 6px 10px !important;
+    height: 38px;
+  }
+
+  .cre-img {
+    width: 80%;
+    margin: auto;
+    display: table;
+    margin-bottom: 20px;
+  }
+
+  .credibility-div p {
+    text-align: center;
+  }
+
+  .comon-logo {
+    height: 64px;
+    width: 96%;
+  }
+
+  .comon-logo img {
+    margin: auto;
+    width: 90%;
+  }
+
+  .how-it-work-1 .bd-how .lan-sub-head,
+  .how-it-work-1 .bd-how .lan-sub-head span {
+    font-size: 21px;
+  }
+
+  .how-it-work-1 .line,
+  .credibility-div .line,
+  .line {
+    width: 72%;
+    margin-top: 30px;
+  }
+
+  .logo-modal-div1 {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .login-btn {
+    margin: 15px auto auto;
+    width: 180px;
+  }
+
+  .navbar-collapse .comon-buuton {
+    margin-top: 20px !important;
+    width: 151px !important;
+    font-size: 13px !important;
+  }
+
+  .navbar-collapse {
+    width: 90% !important;
+    display: table !important;
+    margin: auto !important;
+    flex-grow: 0 !important;
+    align-items: center !important;
+    flex-basis: inherit !important;
+  }
+
+  .comon-buuton,
+  .coming-soon-btn {
+    padding: 6px 22px !important;
+    font-size: 13px !important;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .banner {
+    padding-top: 140px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .banner h1,
+  .banner h1 span {
+    font-size: 44px;
+  }
+
+  .banner p {
+    width: 95%;
+  }
+
+  .banner::before {
+    left: 0px;
+    top: 100px;
+    width: 54%;
+  }
+
+  .banner:after {
+    right: 0px;
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .banner {
+    padding-top: 140px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .banner h1,
+  .banner h1 span {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navbar-brand img {
+    width: 109px;
+  }
+
+  .banner h1,
+  .banner h1 span {
+    font-size: 42px;
+  }
+
+  .bar1 svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .banner h1 span.sp-color {
+    display: block;
+  }
+
+  .banner ul li {
+    margin: 0 14px;
+  }
+
+  .banner ul li::after {
+    width: 8px;
+    height: 8px;
+    right: -19px;
+  }
+
+  .comon-buuton {
+    padding: 6px 15px !important;
+    font-size: 13px !important;
+    height: 38px;
+  }
+
+  .contact-btn {
+    height: 38px;
+    padding: 6px 15px !important;
+    font-size: 13px !important;
+    text-align: center;
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  .banner p {
+    margin-bottom: 30px;
+  }
+
+  .how-it-work-1 h2,
+  .how-it-work-1 p {
+    text-align: center;
+  }
+
+  .lan-sub-head,
+  .lan-sub-head span {
+    font-size: 31px;
+  }
+
+  .how-it-work-1 .comon-buuton {
+    text-align: center;
+    margin: 25px auto !important;
+  }
+
+  .comon-part1 p,
+  .comon-part1 h2 {
+    text-align: left;
+  }
+
+  .comon-part1 {
+    padding-left: 20px;
+  }
+
+  .comon-part1:after {
+    left: 0;
+  }
+
+  .comon-part1 h2 {
+    font-size: 18px;
+  }
+
+  .comon-part1 .right-content1 p {
+    line-height: 20px;
+    width: 100%;
+    margin-top: 2px;
+    font-size: 15px;
+  }
+
+  .comon-part1 figure {
+    width: 12%;
+  }
+
+  .comon-part1 .right-content1 {
+    padding-left: 20px;
+  }
+
+  .credibility-div p {
+    text-align: center;
+  }
+
+  .cre-img {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .bd-cre {
+    margin-top: 30px !important;
+  }
+
+  .credibility-div .contact-btn {
+    margin-top: 15px !important;
+  }
+
+  .credibility-div .contact-btn,
+  .credibility-div .comon-buuton {
+    margin: auto;
+  }
+
+  .how-it-work-1 ul {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .comon-logo {
+    height: 36px;
+  }
+
+  .how-it-work-1 {
+    padding-top: 70px;
+  }
+
+  .credibility-div p,
+  .how-it-work-1 p,
+  .banner p {
+    font-size: 14px;
+  }
+
+  .multi-logo-div {
+    padding: 3px 0;
+  }
+
+  .how-it-work-1 .line,
+  .credibility-div .line,
+  .line {
+    width: 72%;
+    margin-top: 30px;
+  }
+
+  .credibility-div .line {
+    margin-top: 20px;
+  }
+
+  .allow-div1 {
+    margin-top: 50px;
+  }
+
+  .credibility-div {
+    padding-top: 50px;
+  }
+
+  .bd-how {
+    margin-top: 50px !important;
+  }
+
+  .banner {
+    padding-top: 119px;
+  }
+
+  .col-wallte-btn {
+    width: 165px;
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  .navbar-collapse .comon-buuton {
+    margin-top: 20px !important;
+    width: 140px !important;
+    padding: 6px 12px !important;
+  }
+
+  .login-btn {
+    margin: auto;
+    margin-top: 15px;
+    font-size: 13px;
+    height: 38px;
+    padding: 6px 64px;
+  }
+
+  .navbar {
+    padding-top: 2px;
+  }
+
+  .navbar-collapse {
+    width: 90% !important;
+    display: table !important;
+    margin: auto !important;
+    flex-grow: 0 !important;
+    align-items: center !important;
+    flex-basis: inherit !important;
+  }
+
+  .modal-logoiny .modal-body {
+    width: 90%;
+    margin: auto;
+  }
+
+  .coming-soon-btn {
+    font-size: 14px;
+  }
+
+  .lline-div {
+    width: 63px;
+    height: 3px;
+    margin-bottom: 6px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  .navbar {
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .how-it-work-1 p {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .credibility-div p {
+    width: 81%;
+    margin: auto;
+  }
+
+  .comon-buuton img {
+    left: 12px;
+    width: 19px;
+  }
+
+  .logo-modal-div1 {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .banner h1 span.sp-color {
+    display: block;
+  }
+
+  .banner ul li {
+    margin: 0 14px;
+  }
+
+  .banner ul li::after {
+    width: 8px;
+    height: 8px;
+    right: -19px;
+  }
+
+  .comon-buuton {
+    padding: 6px 18px !important;
+    font-size: 13px !important;
+  }
+
+  .banner p {
+    margin-bottom: 30px;
+  }
+
+  .how-it-work-1 h2,
+  .how-it-work-1 p {
+    text-align: center;
+  }
+
+  .lan-sub-head,
+  .lan-sub-head span {
+    font-size: 31px;
+  }
+
+  .how-it-work-1 .comon-buuton {
+    text-align: center;
+    margin: 25px auto !important;
+  }
+
+  .comon-part1 p,
+  .comon-part1 h2 {
+    text-align: left;
+  }
+
+  .comon-part1 {
+    padding-left: 20px;
+  }
+
+  .comon-part1:after {
+    left: 0;
+  }
+
+  .comon-part1 h2 {
+    font-size: 18px;
+  }
+
+  .comon-part1 .right-content1 p {
+    line-height: 22px;
+    width: 100%;
+    margin-top: 2px;
+  }
+
+  .comon-part1 figure {
+    width: 12%;
+  }
+
+  .comon-part1 .right-content1 {
+    padding-left: 20px;
+  }
+
+  .credibility-div p {
+    text-align: center;
+  }
+
+  .banner::before {
+    width: 52%;
+    top: 60px;
+  }
+
+  .banner::after {
+    width: 52%;
+    top: 0px;
+  }
+
+  .navbar-collapse .comon-buuton {
+    width: 134px !important;
+    padding: 6px 10px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .banner h1,
+  .banner h1 span {
+    font-size: 40px;
+  }
+
+  .banner h1 span.sp-color {
+    display: block;
+  }
+
+  .banner ul li a {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .banner ul li {
+    margin: 0 14px;
+  }
+
+  .banner ul li::after {
+    width: 8px;
+    height: 8px;
+    right: -19px;
+  }
+
+  .comon-buuton {
+    padding: 6px 18px !important;
+    font-size: 13px !important;
+  }
+
+  .banner p {
+    margin-bottom: 30px;
+  }
+
+  .how-it-work-1 h2,
+  .how-it-work-1 p {
+    text-align: center;
+  }
+
+  .lan-sub-head,
+  .lan-sub-head span {
+    font-size: 31px;
+  }
+
+  .how-it-work-1 .comon-buuton {
+    text-align: center;
+    margin: 25px auto !important;
+  }
+
+  .comon-part1 p,
+  .comon-part1 h2 {
+    text-align: left;
+  }
+
+  .comon-part1 {
+    padding-left: 20px;
+  }
+
+  .comon-part1:after {
+    left: 0;
+  }
+
+  .comon-part1 h2 {
+    font-size: 18px;
+  }
+
+  .comon-part1 .right-content1 p {
+    line-height: 20px;
+    width: 100%;
+    margin-top: 2px;
+    font-size: 15px;
+  }
+
+  .comon-part1 figure {
+    width: 11%;
+  }
+
+  .comon-part1 .right-content1 {
+    padding-left: 20px;
+  }
+
+  .credibility-div p {
+    text-align: center;
+  }
+
+  .banner {
+    padding-top: 112px;
+  }
+
+  .banner ul {
+    margin: 14px 0;
+  }
+
+  .how-it-work-1 {
+    padding-top: 70px;
+  }
+
+  .how-it-work-1 .line,
+  .credibility-div .line,
+  .line {
+    width: 72%;
+    margin-top: 30px;
+  }
+
+  .credibility-div .line {
+    margin-top: 20px;
+  }
+
+  .bd-how {
+    margin-top: 40px !important;
+  }
+
+  .credibility-div {
+    padding-top: 40px;
+  }
+
+  .allow-div1 {
+    margin-top: 35px;
+  }
+
+  .how-it-work-1 p {
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    margin-top: 15px !important;
+  }
+
+  .multi-logo-div {
+    padding: 10px 0;
+  }
+
+  .how-it-work-1 .lan-sub-head,
+  .how-it-work-1 .lan-sub-head span {
+    font-size: 22px;
+  }
+
+  .navbar-collapse .comon-buuton {
+    margin-top: 20px !important;
+    width: 134px !important;
+    font-size: 13px !important;
+  }
+
+  .login-btn {
+    margin: auto;
+    font-size: 13px;
+  }
+}

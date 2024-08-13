@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="78" height="78" viewBox="0 0 78 78">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7318c4"/>
+      <stop offset="1" stop-color="#e57484"/>
+    </linearGradient>
+    <filter id="Ellipse_188" x="0" y="0" width="78" height="78" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_11882" data-name="Group 11882" transform="translate(-1219 -605)">
+    <g transform="matrix(1, 0, 0, 1, 1219, 605)" filter="url(#Ellipse_188)">
+      <g id="Ellipse_188-2" data-name="Ellipse 188" transform="translate(9 6)" stroke="#fff" stroke-width="1" fill="url(#linear-gradient)">
+        <circle cx="30" cy="30" r="30" stroke="none"/>
+        <circle cx="30" cy="30" r="29.5" fill="none"/>
+      </g>
+    </g>
+    <g id="Group_11881" data-name="Group 11881" transform="translate(1246.757 621.977)">
+      <path id="Path_3681" data-name="Path 3681" d="M38.2,13.541A.076.076,0,0,0,38.2,13.5,11.229,11.229,0,0,0,15.759,13.5a.8.8,0,0,0-.006.12c-.006.1-.018.2-.018.294v.018a.606.606,0,0,0,.048.186c.006.012.006.024.012.03l5.554,9.8h-.365a.453.453,0,0,0-.449.449v2.475H33.422V24.392a.453.453,0,0,0-.449-.449h-.4l5.59-9.8a.045.045,0,0,0,.006-.03.383.383,0,0,0,.054-.2C38.222,13.787,38.21,13.667,38.2,13.541Zm-15.83,10.4L16.64,13.817v-.036a3.147,3.147,0,0,1,6.291.138v.006c0,.012.006.024.006.042V14l1.7,9.94Zm3.176,0L23.83,13.9a3.149,3.149,0,0,1,6.3,0L28.4,23.942ZM37.317,13.811,31.541,23.942H29.312L31.02,14v-.036c0-.018.006-.03.006-.042v-.006a3.147,3.147,0,0,1,6.291-.132v.024Z" transform="translate(-15.735 -2.75)" fill="#fff"/>
+      <path id="Path_3682" data-name="Path 3682" d="M35.425,44.5H22.573a1.8,1.8,0,0,0-1.8,1.8v9.436a1.8,1.8,0,0,0,1.8,1.8H35.425a1.8,1.8,0,0,0,1.8-1.8V46.3A1.8,1.8,0,0,0,35.425,44.5Z" transform="translate(-17.755 -19.486)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
